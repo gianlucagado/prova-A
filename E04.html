@@ -1,41 +1,51 @@
 <script>
-    //Problema: Pirâmide de asteriscos
-    /*
-    Peça para o usuário inserir um número.
-    Crie uma pirâmide de asteriscos com a quantidade de linhas igual ao número informado.
-    Exemplo: Se o usuário informar 4, a pirâmide será:
-    *
-    **
-    ***
-    ****
-    ***
-    **
-    *
-    UTILIZE FOR COM VARIÁVEL DE CONTROLE!
-    */
+  //Problema: Pirâmide de asteriscos
+  /*
+  Peça para o usuário inserir um número.
+  Crie uma pirâmide de asteriscos com a quantidade de linhas igual ao número informado.
+  Exemplo: Se o usuário informar 4, a pirâmide será:
+  *
+  **
+  ***
+  ****
+  ***
+  **
+  *
+  UTILIZE FOR COM VARIÁVEL DE CONTROLE!
+  */
 
-    //ENTRADA
-    let numero = Number(prompt(`Informe uma numero`))
+  //ENTRADA
 
-    for(let tamanho = 1; tamanho <= numero; tamanho++){
+ 
+  let numero = Number(prompt(`Informe uma numero`))
 
-        
+  let letra = "*";
 
-      tamanho * document.write(`* <br>`)
+  for(let tamanho = 1; tamanho <= numero; tamanho++){
 
-      let varia = document.write(`*`)
+       //document.write(`${"*".toString() * tamanho}<br>`)
 
-      varia * tamanho
-    }
+     
+      document.write(`${letra.repeat(tamanho)} <br>`)
 
    
 
-    
+  
+  }
+  for(let tamanho2 = numero - 1; tamanho2 > 0; tamanho2--){
+
+      document.write(`${letra.repeat(tamanho2)} <br>`)
+
+  }
+
+ 
+
+  
 
 
-    //PROCESSAMENTO
+  //PROCESSAMENTO
 
 
-    //SAÍDA
-    
+  //SAÍDA
+  
 </script>
